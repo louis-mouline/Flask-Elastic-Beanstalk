@@ -1,3 +1,5 @@
+[![AWS - Flask ELastic Beanstalk](https://github.com/louis-mouline/Flask-Elastic-Beanstalk/actions/workflows/aws_workflow.yml/badge.svg)](https://github.com/louis-mouline/Flask-Elastic-Beanstalk/actions/workflows/aws_workflow.yml)
+
 # Flask-Elastic-Beanstalk
 
 

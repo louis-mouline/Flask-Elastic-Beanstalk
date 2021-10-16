@@ -11,16 +11,15 @@ The objective is to build a Flask Application that is Continuously Deployed usin
 
 *You can refer to tutorial [here as well for Flask EB](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html)*
 
-1.  check out this repo and cd into it
-2.  create a python virtualenv and source it and run `make all`
-
-`python3 -m venv ~/.virtual`
-`source ~/.virtual/bin/activate`
-`make all`
+1.  Check out this repo and cd into it
+2.  Create a python virtualenv and source it and run `make all`
+    * `python3 -m venv ~/.virtual`
+    * `source ~/.virtual/bin/activate`
+    * `make all`
 
 *Note, that awsebcli is installed via requirements*
 
-3. initialize new eb app
+3. Initialize new eb app
 
 `eb init -p python-3.7 flask-continuous-delivery --region us-east-1`
 
@@ -33,3 +32,5 @@ The objective is to build a Flask Application that is Continuously Deployed usin
 5.  Setup AWS Code Build Project
 
 [View Sample `buildspec.yml` Config Here](https://github.com/noahgift/Flask-Elastic-Beanstalk/blob/main/buildspec.yml)
+
+6. Connect to `http://localhost:8080` or `http://localhost:8080/echo/{enter_value}`

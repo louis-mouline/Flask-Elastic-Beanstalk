@@ -8,7 +8,7 @@ application = Flask(__name__)
 def hello():
     """Return a friendly HTTP greeting."""
     print("I am inside hello world")
-    return "Continuous Delivery Demo"
+    return "<p>Continuous Delivery Demo</p>"
 
 
 @application.route("/echo/<name>")
@@ -21,5 +21,4 @@ def echo(name):
 if __name__ == "__main__":
     # Setting debug to True enables debug output. This line should be
     # removed before deploying a production app.
-    application.debug = True
-    application.run()
+    application.run(host='127.0.0.1', port=8080, debug=True)
